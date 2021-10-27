@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Веб приложение для фильтрации номенклатурных номеров из текста">
+	<meta name="keywords" content="filter, generator, web-app, spa">
+	<meta name="author" content="eGa ^(0_0)^">
+
+	<title>NN Filter 2.0</title>
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+	<header>
+		<h1>Фильтр номенклатурных номеров</h1>
+		<br>
+		<p>Данный фильтр предназначен для фильтрации номенклатурных номеров данного формата "121203-03032", из текстового массива любого размера.</p>
+	</header>
+
+	<main>
+		<textarea id="txt-area" placeholder="1. Вставте текст с искомыми значениями..." autofocus></textarea>
+
+		<div class="controls">
+			<button class="buttons" id="copy" disabled>2. Скопировать</button>
+			<button class="buttons" id="reset" disabled>3. Очистить</button>
+		</div>
+
+		<div class="line"></div>
+
+		<div class="result">Здесь отобразится результат работы фильтра</div>
+
+		<div class="message">Результат скопирован!</div>
+
+		<div class="line" id="line-end"></div>
+
+		<div class="count"></div>
+	</main>
+
+	<footer></footer>
+
+	<script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+:root {
+	--global-bg-color: linear-gradient(270deg, rgb(152, 207, 195), rgb(78, 177, 180));
+	--default-hover-color: rgb(228, 253, 255);
+	--default-font-color: #fff;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	min-height: 100vh;
+}
+
+body {
+	background: var(--global-bg-color);
+	color: var(--default-font-color);
+}
+
+header {
+	display: block;
+	margin: 40px auto;
+	text-align: center;
+	width: 90%;
+}
+
+main {
+	margin: 0 auto;
+	width: 90%;
+	text-align: center;
+}
+
+textarea {
+	border: none;
+	border-radius: 15px;
+	display: block;
+	height: 150px;
+	margin: 20px auto;
+	width: 100%;
+	padding: 15px;
+}
+
+textarea:hover {
+	background-color: var(--default-hover-color);
+}
+
+textarea:focus {
+	background-color: var(--default-hover-color);
+	outline: none;
+}
+
+.line {
+	background-color: #fff;
+	height: 2px;
+	margin: 20px auto;
+}
+
+.controls {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.buttons {
+	background-color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	height: 40px;
+	margin: 20px;
+	width: 200px;
+}
+
+.buttons:hover {
+	background-color: var(--default-hover-color);
+}
+
+.buttons:focus {
+	outline: none;
+}
+
+.result {
+	color: white;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+
+.message {
+	align-items: center;
+	background-color: rgb(48, 219, 139);
+	border-radius: 0;
+	display: flex;
+	font-weight: 700;
+	height: 40px;
+	justify-content: center;
+	left: 0;
+	margin: 0 auto;
+	position: fixed;
+	top: -40px;
+	transition: top 1s ease;
+	width: 100%;
+}
+
+.count .num {
+	font-size: 30px;
+	font-weight: 900;
+}
+
+#line-end {
+	display: none;
+}
